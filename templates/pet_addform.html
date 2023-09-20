@@ -1,0 +1,71 @@
+{% extends 'base.html' %} {% block title %}Pet List{% endblock %} {% block content
+%}
+
+<form method="POST" action="/add">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input
+      placeholder="Enter Pet Name"
+      name="name"
+      class="form-control"
+      id="name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="species" class="form-label">Species</label>
+    <input
+      placeholder="Enter Species"
+      name="species"
+      class="form-control"
+      id="species"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="photo_url" class="form-label">Photo URL</label>
+    <input
+      placeholder="Provide a photo of this pet"
+      name="photo_url"
+      class="form-control"
+      id="exampleInputPassword1"
+    />
+  </div>
+    </div>
+  <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input type="number"
+      placeholder="Enter Age"
+      name="age"
+      class="form-control"
+      id="age"
+      
+    />
+  </div>
+    </div>
+  <div class="mb-3">
+    <label for="notes" class="form-label">Notes</label>
+    <input
+      placeholder="Enter Notes"
+      name="notes"
+      class="form-control"
+      id="notes"
+      
+    />
+  </div>
+    </div>
+  <div class="mb-3">
+    <label for="available" class="form-label">Available</label>
+    <input type="checkbox"
+      placeholder="Enter Availability"
+      name="available"
+      class="form-control"
+      id="available"
+      required 
+      checked
+    />
+  </div>
+
+  <button class="btn btn-primary">Add</button>
+</form>
+{% endblock %}
